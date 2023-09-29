@@ -1,0 +1,72 @@
+ion-content {
+    --background: black;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@-webkit-keyframes rotate-in-bl {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        opacity: 1
+    }
+}
+
+@keyframes rotate-in-bl {
+    0% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        opacity: 1
+    }
+}
+
+.container {
+    -webkit-animation: rotate-in-bl 1s cubic-bezier(.25, .46, .45, .94) both;
+    animation: rotate-in-bl 1s cubic-bezier(.25, .46, .45, .94) both;
+    position: inherit;
+    img {
+        height: 100%;
+        width: 100%;
+        margin-top: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.inner-scroll {
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top) * -1);
+    bottom: calc(var(--offset-bottom) * -1);
+    padding-inline-start: var(--padding-start);
+    padding-inline-end: var(--padding-end);
+    padding-top: calc(var(--padding-top) + var(--offset-top));
+    padding-bottom: calc(var(--padding-bottom) + var(--keyboard-offset) + var(--offset-bottom));
+    position: inherit;
+    color: var(--color);
+    box-sizing: border-box;
+    overflow: hidden;
+    touch-action: pan-x pan-y pinch-zoom;
+}

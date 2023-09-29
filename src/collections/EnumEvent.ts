@@ -1,0 +1,20 @@
+enum EnumEvent {
+    Option1 = 'Preche',
+    Option2 = 'Tafsir',
+    Option3 = 'Maouloud',
+    Option4 = 'Cours de Coran',
+    Option5 = 'Études Hadith',
+    Option6 = 'Fiqh ',
+    Option7 = 'Éducation Islamique pour Enfants',
+    Option8 = 'Conférences ',
+    Option9 = 'Ateliers',
+    Option10 = 'Événements communautaires ',
+    Option11 = 'Programmes pour les jeunes ' ,
+    Option12 = 'Événements interreligieux ',
+    Option13 = 'Cercles d\'étude ' ,
+    Option14 = 'Rencontres spirituelles',
+    Option15 = 'Services communautaires ',
+    Option16 = 'Séminaires',
+    Option17 = 'Activités sportives et récréatives ',
+    
+  }

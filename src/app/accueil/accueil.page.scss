@@ -1,0 +1,65 @@
+.toolbar-background {
+    background-color: #d89f71;
+    opacity: calc(var(--opacity) * var(--opacity-scale));
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 22px;
+    color: #d89f71;
+}
+
+.login-header {
+    background-color: black;
+    height: 20%;
+}
+
+// CARD
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.header-img {
+    width: 45px;
+}
+
+.card-container {
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.custom-card {
+    width: 40%;
+    margin: 5px;
+    // Makes it so the img does not flow outside container
+    img {
+        margin-left: 30%;
+        margin-top: 25%;
+        max-width: 40%;
+        position: fixed;
+    }
+    .card-content-md {
+        -webkit-padding-start: 16px;
+        padding-inline-start: 16px;
+        -webkit-padding-end: 16px;
+        padding-inline-end: 16px;
+        padding-top: 70%;
+        padding-bottom: 13px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .card-content-ios {
+        -webkit-padding-start: 16px;
+        padding-inline-start: 16px;
+        -webkit-padding-end: 16px;
+        padding-inline-end: 16px;
+        padding-top: 70%;
+        padding-bottom: 13px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

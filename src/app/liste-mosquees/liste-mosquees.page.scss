@@ -1,0 +1,30 @@
+.toolbar-background {
+    background-color: #d89f71;
+    opacity: calc(var(--opacity) * var(--opacity-scale));
+}
+
+.header-img {
+    width: 45px;
+}
+
+.custom-back-button::before {
+    content: "Retour";
+}
+
+ion-modal {
+    background-color: #ef9206;
+    height: 50%;
+    margin-top: 50%;
+}
+
+.ion-padding {
+    background-color: #10100f;
+}
+
+span {
+    color: red;
+}
+
+.boutonbas {
+    float: right;
+}

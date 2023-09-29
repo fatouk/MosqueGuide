@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+    <ion-toolbar class="toolbar-background">
+        <ion-title>BismiAllah</ion-title>
+        <img slot="end" class="header-img" src="assets/Logo1.png" />
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="login-header">
+        <h1 class="ion-text-center">{{ remainingTime }}</h1>
+        <!-- <img class="logo-img" src="assets/Logo1.png" /> -->
+    </div>
+    <div class="card-container">
+        <ion-card class="custom-card" color="primary" (click)="redirigerVersAutrePage()">
+            <img class="logo-img" src="assets/mosque.png" />
+            <ion-card-content>Mosquées</ion-card-content>
+        </ion-card>
+
+        <ion-card class="custom-card" color="primary" (click)="redirigerVersCoran()">
+            <img class="logo-img" src="assets/quran.png" />
+            <ion-card-content>Coran</ion-card-content>
+        </ion-card>
+        <ion-card class="custom-card" color="primary">
+            <img class="logo-img" src="assets/geomosque.png" />
+            <ion-card-content>Géolocaliser</ion-card-content>
+        </ion-card>
+        <ion-card class="custom-card" color="primary">
+            <img class="logo-img" src="assets/event.png" />
+            <ion-card-content>Evénements</ion-card-content>
+        </ion-card>
+        <ion-card class="custom-card" color="primary">
+            <img class="logo-img" src="assets/calendar.png" />
+            <ion-card-content>Calendrier</ion-card-content>
+        </ion-card>
+        <ion-card class="custom-card" color="primary">
+            <img class="logo-img" src="assets/radio.png" />
+            <ion-card-content>Mes Radios</ion-card-content>
+        </ion-card>
+    </div>
+</ion-content>

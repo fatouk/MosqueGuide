@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header no-border>
+    <div class="login-header ion-padding">
+        <img class="logo-img" src="assets/Logo1.png" />
+    </div>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="background-content">
+        <div id="container">
+            <div heading-columns-lr>
+                <h1 big-heading>Login</h1>
+                <!-- <h2 small-heading>Sign up</h2> -->
+            </div>
+            <ion-label class="bis">
+                Aw Bissimilla, Trouver vos mosquées du coin
+            </ion-label>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/tel33.png">
+                <ion-input placeholder="Numero" type="text" maxlength="20"></ion-input>
+            </ion-item>
+            <ion-label class="numerooublie">
+                <span class="link-button" routerLink="/numerooublie">Numero oublié</span>
+            </ion-label>
+            <div linespace> </div>
+            <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" routerLink="/accueil" size="large" expand="block">LOGIN</ion-button>
+            <ion-label class="pasdecompte">
+                Pas de compte? <span class="link-button" routerLink="/inscrire">S'inscrire</span>
+            </ion-label>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        </div>
+    </div>
 </ion-content>

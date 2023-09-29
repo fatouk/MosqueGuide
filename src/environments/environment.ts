@@ -5,8 +5,21 @@
 export const environment = {
   production: false
 };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+export const firebaseConfig = {
+  apiKey: "AIzaSyDPfhICjiE2fASZj4HNb1WMOxEGyjhEFCI",  
+  authDomain:"mosqueeguide-firebase-queries.firebaseapp.com",
+  projectId: "mosqueeguide",
+  storageBucket: "mosqueeguide-firebase-queries.appspot.com",
+  messagingSenderId: "954603957308",
+  appId: "1:954603957308:web:07b35009bd561e42b5e739",
+  measurementId: "G-VTTQL6BC0S"
+};
 
-/*
+/*authDomain: "mosqueeguide.firebaseapp.com",
+ storageBucket: "mosqueeguide.appspot.com",
+
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *

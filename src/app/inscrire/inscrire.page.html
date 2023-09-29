@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <div class="login-header ion-padding">
+        <img class="logo-img" src="assets/Logo1.png" />
+    </div>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <div class="background-content">
+        <div id="container">
+            <div heading-columns-lr>
+                <h1 big-heading>Inscription</h1>
+                <!-- <h2 small-heading>Sign up</h2> -->
+            </div>
+            <ion-label class="bis">
+                Aw Bissimilla, Trouver vos mosquées du coin
+            </ion-label>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/user64.jpg">
+                <ion-input placeholder="Nom" type="text" maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/user64.jpg">
+                <ion-input placeholder="Prénom" type="text" maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/tel33.png">
+                <ion-input placeholder="Numero" type="text" maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/telsos2.png">
+                <ion-input placeholder="Numero de secours" type="text" maxlength="20"></ion-input>
+            </ion-item>
+            <ion-item transparent>
+                <img ion-small src="assets/icon/email2.png">
+                <ion-input placeholder="Email" type="email"></ion-input>
+            </ion-item>
+            <div linespace> </div>
+            <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block">S'INSCRIRE</ion-button>
+            <ion-label class="pasdecompte">
+                Avez-vous un compte? <span class="link-button" routerLink="/home">Se connecter</span>
+            </ion-label>
+            <ion-button color="secondary"><img ion-small src="assets/icon/google.png">Se connecter avec Google</ion-button>
+
+        </div>
+    </div>
+</ion-content>
